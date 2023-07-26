@@ -32,7 +32,6 @@ cursor_payments.execute(query)
 rows = cursor_payments.fetchall()
 
 
-
 def process_bill_reference_numbers(rows):
     url = "https://hyzxqf8bwr.eu-west-1.awsapprunner.com/fineract-provider/api/v1/loans?externalId={}"
     headers = {
